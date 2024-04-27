@@ -30,3 +30,7 @@ li a{
 .title{
     text-align: center;
 }
+.subtitle{
+    margin: 20px 0;
+    color: #FEA47F;
+}
