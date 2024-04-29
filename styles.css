@@ -27,10 +27,19 @@ li a{
     padding: 1rem 3rem;
 
 }
+hr{
+    margin: 2em 0;
+    line-height: 0.5em;
+}
 .title{
     text-align: center;
 }
 .subtitle{
     margin: 20px 0;
     color: #FEA47F;
+    text-decoration: underline;
+}
+.topic{
+    margin: 15px 0;
+    color: #fc8a5d;
 }

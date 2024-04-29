@@ -57,14 +57,59 @@ otro proyecto.<br>
 ■ deploy - Instala el paquete en un repositorio remoto para ser compartido.
             </p>
             <h2 class="subtitle">Comandos</h2>
-            <p class="text">mvn compile</p>
-            <p class="text">mvn clean jetty:run</p>
-            <p class="text">mvn clean</p>
-            <p class="text">mvn test</p>
+            <p class="text">mvn compile: Compila el proyecto</p>
+            <p class="text">mvn clean jetty:run: Limpia los archivos que se generaron y corre el servidor jetty</p>
+            <p class="text">mvn clean: Limpia los archivos que se generaron</p>
+            <p class="text">mvn test: Ejecuta los tests</p>
+            <p class="text">Como cambiar el puerto a Jetty: &lt;httpConector>
+                &lt;port>8080&lt;/port>&lt;/httpConector> esto va en el pom.xml, en plugin, en configuration.
+            </p>
         </section>
         <hr>
         <section class="clase">
-
+            <h2 class="subtitle">Clase 2: TDD y Thymeleaf</h2>
+            <p class="text">@Test: Notación para prueba unitaria</p>
+            <p class="text">El nombre debe ser descriptivo y debe decir que retorna y cuando</p>
+            <img src="./assets/nombreTest.png" alt="">
+            <img src="" alt="">
+            <h3 class="topic">
+                Fases de la prueba
+            </h3>
+            <p class="text">Given: prepara el escenario, los datos que van a ser usados.</p>
+            <p class="text">When: Es la ejecucion</p>
+            <p class="text">Then: Es la validación de los tests</p>
+            <p class="text">Una vez hecho un test validando que algo funciona, hay que validar el caso contrario. Ya que al principio se espera hacer lo minimo y necesario para que pase el test y luego ir refactorizando el código.</p>
+            <p class="text">git fetch: me trae las ramas creadas desde github que no tengo localmente.</p>
+            <p class="text">git branch --all: muestra todas las ramas</p>
+            <h2 class="subtitle">Arquitectura de Capas</h2>
+            <p class="text">Github folder: Configuracion de workflows</p>
+            <p class="text">Target folder: Las clases compiladas del proyecto</p>
+            <p class="text">.gitignore: Archivo de configuración que va a contener los nombres de los archivos que vamos a omitir al subir a github.</p>
+            <p class="text">pom.xml: Es el archivo que va a leer Maven para saber como va a manejar el proyecto, que dependencias descargar</p>
+            <p class="text">src-> main folder: Es el código productivo, la lógica de la aplicación</p>
+            <p class="text">src-> main-> java: Contiene el código Java</p>
+            <p class="text">src-> main-> resources: Contiene archivos estáticos, archivos que no van a ser modificados y que van a ser útiles para el proyecto, por ejemplo una BD que se usa para agregar un usuario o imagenes fijas de una presentación o logo.</p>
+            <p class="text">src-> main-> webapp: Acá se encuentra el código que nos va a generar el frontend. </p>
+            <p class="text">src-> main-> webapp-> resources: Es para los archivos .css y .js</p>
+            <p class="text">src-> main-> webapp-> WEB-INF: Archivos HTML generados para las vistas</p>
+            <p class="text">subcarpeta dominio: Llamada capa de Servicios, va la lógica que tiene que hacer nuestro servicio con la lógica del frontend</p>
+            <p class="text">subcarpeta infraestructura: Va el código para conectarse efectivamente a la BD que estemos usando.</p>
+            <p class="text">subcarpeta presentación: Contiene el controlador (Capa que tiene muchos metodos y cada uno tiene asociado la ruta que esta escuchando, indica el HTML que se va a mostrar). La clase tiene una anotación @Controller para especificar que es un controlador.</p>
+            <p class="text">En los modelos viajan los objetos que envia Thymeleaf</p>
+            <img src="./assets/controlador.png" alt="">
+            <p class="text">subcarpeta config SpringWebConfig: Indica como tienen que ser tratados los archivos de Java. Algunos van a ser controladores que escuchan las peticiones, otros que van a ser repositorios que se conectan con la BD, otros que van a ser servicios que validen la lógica de negocios. Spring los va a ir instanciando a medida que los necesita. Usa para esto la anotación @ComponentScan</p>
+            <p class="text">subcarpeta config HibernateConfig: </p>
+            <p class="text">subcarpeta config DatabaseInitializationConfig: </p>
+            <p class="text">src-> test folder: Son los tests que verifican que la aplicación no falle</p>
+            <h2 class="subtitle">Thymeleaf</h2>
+            <img src="./assets/inputTh.png" alt="">
+            <p class="text">Thymeleaf se va a encargar de enlazar el atributo th:field del input con el objeto java Email y guarda su valor en ese objeto.</p>
+            <a href="https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.pdf">Documentación de Thymeleaf</a>
+        </section>
+        <hr>
+        <section class="clase">
+            <h2 class="subtitle"></h2>
+            <p class="text"></p>
         </section>
     </main>
 </body>
