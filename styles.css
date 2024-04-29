@@ -43,3 +43,15 @@ hr{
     margin: 15px 0;
     color: #fc8a5d;
 }
+img{
+    margin: auto;
+    max-height: 300px;
+    max-width: 300px;
+}
+.text{
+    margin: 5px 0;
+    padding: 5px;
+}
+.bold{
+    font-weight: bold;
+}
