@@ -43,7 +43,7 @@ hr{
     margin: 15px 0;
     color: #fc8a5d;
 }
-img{
+.vis{
     margin: auto;
     max-height: 300px;
     max-width: 300px;
