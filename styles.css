@@ -48,6 +48,10 @@ hr{
     max-height: 300px;
     max-width: 300px;
 }
+.dise{
+    max-height: 500px;
+    max-width: 500px;
+}
 .text{
     margin: 5px 0;
     padding: 5px;
