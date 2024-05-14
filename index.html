@@ -260,7 +260,176 @@ próximo sprint.
         <hr>
         <section class="clase">
             <h2 class="subtitle">Clase 3</h2>
-            <p class="text"></p>
+            <h2 class="subtitle">Requisitos de Software:</h2>
+            <p class="text">
+                ¿Qué es un requisito? <br>
+• Características de los requisitos<br>
+• Tipos de requisitos<br>
+• Requisitos Funcionales<br>
+• De Usuario<br>
+• De Sistema<br>
+• Requisitos No Funcionales<br>
+• Del producto<br>
+• Organizacionales<br>
+• Externos<br>
+• Requisitos de Dominio<br>
+• Especificación de Requisitos de Software<br>
+• Documento de Requisitos: IEEE 830<br>
+            </p>
+        <p class="text">¿Qué es un requisito?<br>
+            Una condición o capacidad que debe de ser cumplida por un sistema
+            o componente de un sistema para satisfacer un contrato, estándar,
+            especificación u otros documentos impuestos formalmente. (IEEE)
+            “Un requisito es simplemente una declaración abstracta de alto nivel de un servicio que debe
+            proporcionar el sistema o una restricción de éste. En el otro extremo, es una definición detallada y
+            formal de una función del sistema.”(Ian Sommerville)</p>
+        <p class="text">El alcance es el proposito para el que fue creado.</p>
+        <p class="text">Un requisito es una funcionalidad del sistema.</p>
+        <p class="text">Características de los requisitos
+            Según la IEEE-830 los requisitos deben ser: <br> • Inequívocos: La redacción debe ser clara para no dar lugar a malas interpretaciones.<br> • Consistentes: No deben existir contradicciones entre ellos.<br> • Completos: Todas las entradas posibles y transformaciones deben estar contempladas.<br> • Alcanzables: deben ser realistas, es decir, debe ser posible su cumplimiento.<br> • Necesarios: deben conservarse solo aquellos que incidan en la resolución del problema.<br> • Verificables: debe existir un método claro de verificar su cumplimiento.<br> • Trazables: se debe poder verificar su historia a lo largo de todo el proyecto.</p>
+        <p class="text">Tipos de requisitos<br>
+            1. Requisitos Funcionales<br>
+            2. Requisitos No Funcionales<br>
+            3. Requisitos de Dominio
+        <br>
+        Requisitos Funcionales<br>
+        Describen las funciones que debe llevar a cabo el software ante determinadas entradas.
+        Los requerimientos funcionales se expresan en términos de “funciones del sistema”.
+        Una función del sistema es algo puntual que el sistema debe hacer .<br>
+        Técnica básica:<br>
+        Si X es una función del sistema, entonces utilice la frase
+        “El sistema debe hacer X”.
+        Ejemplo:
+        El sistema enviará un correo electrónico al cliente cuando se registre el pago. <br>
+        Dentro de los Requisitos Funcionales tenemos:<br>
+        Requisitos del usuario: Están especificados desde el punto de vista del usuario.<br>
+        Generalmente suelen describirse de forma abstracta.
+        Requisitos del sistema: Están especificados desde el punto de vista del
+        sistema.<br>
+        Los requerimientos del sistema son versiones extendidas de los
+        Requerimientos del usuario que son utilizados por los ingenieros de software como punto de partida para el diseño del sistema. Agregan detalle y explican como el sistema debe proporcionar los requerimientos del usuario. Deben ser una especificación completa y consistente de un sistema
+            </p>
+            <img src="./assets/req-func.png" alt="">
+        <p class="text">Requisitos No Funcionales<br>
+            Los requerimientos no funcionales definen las características o cualidades generales que se
+            esperan de un sistema y establecen restricciones sobre el producto, el proceso de desarrollo de
+            software y establecen restricciones externas que el software debe lograr
+            No hacen referencia a las funciones.
+            Se enfocan en las propiedades (ej. fiabilidad, tiempos, almacenamiento, calidad, etc.)
+            Ejemplo:
+            El sistema debe permitir la realización de 1000 transacciones por segundo.</p>
+            <p class="text">Un requisito no funcional debe ser medible y verificable. Esta relacionado a la escalabilidad, el mantenimiento, la seguridad, la velocidad, almacenamiento, visibilidad, etc</p>
+            <img src="./assets/req-no-func.png" alt="">
+        <p class="text">Del producto<br>
+            Especifican el comportamiento del producto.
+            Por ejemplo: La tasa de fallos por minuto del sistema no debe ser superior a dos. (Fiabilidad).<br>
+            Organizacionales<br>
+            Se derivan de políticas y procedimientos existentes en la organización.
+            Ej: se debe seguir el proceso de calidad que marca el estándar ISO 9001. (Estándar).<br>
+            Externos<br>
+            se derivan de factores externos al sistema y al proceso de desarrollo, es decir,
+            como el sistema interactúa con otros sistemas y con otras organizaciones.
+            Ej: Un operador no tendrá acceso a la dirección del cliente. (Privacidad).</p>
+        <p class="text">Requisitos de Dominio<br>
+            Estos requisitos reflejan características del dominio de la aplicación.
+            Pueden ser FUNCIONALES O NO FUNCIONALES.
+            Tienen que ver directamente con “las reglas de juego” de la aplicación que se
+            está construyendo.
+            La terminología usada es especifica del dominio.
+            Para los expertos del dominio las especificaciones pueden ser obvias,
+            no así para los desarrolladores.
+            Por ej: El alumno no podrá inscribirse a una materia de la cual adeude su correlativa.</p>
+            <img src="./assets/gestion-req.png" alt="">
+        <p class="text">Etapas<br>
+            Priorización<br>
+            Se definirá para cada requisito funcional (establecido y aprobado en el documento anterior), los recursos que se necesitaran para desarrollar el sistema, el riesgo y el impactode esta forma podrá determinar cuales deberían tener mas importancia y/o hacerse primero.<br>
+            Validación:<br>
+            Se revisará que no haya inconsistencias o errores en lo relevado y que se mantengan los estándares de la industria.<br>Concepción<br>
+            La etapa de concepción, es un primer acercamiento al
+            problema, donde se tratara de identificar a los actores y
+            describir el problema de forma natural.<br>
+            Indagación<br>
+            Se deberá verificar que se comprende bien el problema, por
+            lo se profundizara para definir el alcance.<br>
+            Elaboración<br>
+            Se documentará el proceso de análisis para que
+            posteriormente se pueda realizar el proceso de diseño. Los
+            documentos mas importantes a registrar son: Especificación
+            de requerimientos y Casos de Uso.</p>
+        <p class="text">Especificación de requisitos de Software<br>
+            Especificación de Requisitos de Software (ERS, SRS):
+            Documento formal que contiene los requisitos de un sistema.
+            El estándar IEEE 830-1998 para el SRS(en inglés) o ERS (Especificación de requisitos
+            de software) es un conjunto de recomendaciones para la especificación de los requisitos de
+            software que tiene como producto final la documentación de los acuerdos entre el cliente
+            y el grupo de desarrollo para así cumplir con la totalidad de exigencias estipuladas.</p>
+        <p class="text">ERS IEEE 830 - 98
+            1 Introducción
+            1.1 Propósito
+            1.2 Ámbito del Sistema
+            1.3 Definiciones, Acrónimos y Abreviaturas
+            1.4 Referencias
+            1.5 Visión general del documento
+            2 Descripción General
+            2.1 Perspectiva del Producto
+            2.2 Funciones del Producto
+            2.3 Características de los usuarios
+            2.4 Restricciones
+            2.5 Suposiciones y Dependencias
+            2.6 Requisitos Futuros
+            3 Requisitos Específicos
+            3.1 Interfaces Externas
+            3.2 Funciones
+            3.3 Requisitos de Rendimiento
+            3.4 Restricciones de Diseño
+            3.5 Atributos del Sistema
+            3.6 Otros Requisitos
+            4 Apéndices 5 Índice
+        <br>
+        Estructura:
+        1. Introducción:
+        1.1 Objetivo:
+        • Propósito y Audiencia de la ERS
+        1.2 Ámbito
+        • ¿Qué hace y qué no hace el producto SW?
+        1.3 Definiciones, siglas, y abreviaturas
+        • En forma de apéndices o referencias a otros documentos
+        1.4 Referencias
+        • Lista completa de todas las referencias de los documentos en otra parte de la ERS
+        1.5 Visión Global
+        • Cómo se organiza el resto de la ERS
+        <br>
+        2. Descripción General:
+        2.1 Perspectiva del Producto
+        • Relación con otros Productos SW del Sistema
+        - Interfaces Sistema; Usuario; HW; SW; Comunicaciones ..
+        2.2 Funciones del Producto
+        • ¿Qué hace y qué no hace el producto SW?
+        2.3 Características del Usuario
+        • Formación Académica, Experiencia, Especialización Técnica
+        2.4 Restricciones Generales
+        • Regulaciones, Limitaciones de HW, Interfaces
+        2.5 Asunciones y Dependencias
+        • Factores que pueden afectar a los requisitos especificados
+        2.6 Evolución previsible del sistema
+        • Futuras mejoras que podrían implementarse.
+        3. Requisitos Específicos:
+        Contiene todos los requisitos software. Para cada requisito, se debe incluir: • Identificador único
+        • Descripción de cada entrada (el estímulo) en el sistema. • Cada salida (la contestación) del sistema.
+        Esta es la parte más grande y más importante del SRS
+        3.1 Interfaces Externas
+        Descripción detallada de las entradas y salidas del Sistema SW
+        Complementa las descripciones de Interfaz de los apartados anteriores
+        3.2 Funciones (requisitos funcionales)
+        3.3 Requisitos de Rendimiento/Ejecución
+        Estáticos y Dinámicos
+        3.4 Restricciones de Diseño
+        Impuestas por otros estándares (formato informes; convenciones de nombrado elementos; etc.).
+        Limitaciones del HW
+        3.5 Atributos de Calidad del Software
+        Fiabilidad, Disponibilidad, Mantenibilidad, Seguridad,
+        3.6 Otros Requisitos </p>
+        <p class="text"></p>
         <p class="text"></p>
         <p class="text"></p>
         </section>
